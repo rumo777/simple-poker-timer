@@ -1,0 +1,277 @@
+/*
+ *  Variables
+ *  General
+ *  Layout
+ *  Header
+ *  Dash
+ *  Components
+ *      Timer
+ *      Blinds
+ *      Players
+ *      Prizes
+ *      Chips
+ *      Modal
+ *      Buttons
+ *  Edit mode
+ */
+
+
+/*
+ * Variables
+ */
+$bg-color: #f5f8fa;
+
+@import "~bulma/bulma.sass";
+@import '~cool-checkboxes-for-bulma.io/dist/css/bulma-radio-checkbox.min.css';
+
+/*
+ * General
+ */
+html {
+    overflow: auto;
+
+    font-size: 15px;
+
+    @include from(361px) {
+        font-size: 17px;
+    }
+
+    @include desktop-only {
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: 'Open Sans', "Helvetica Neue";
+}
+
+.table {
+    .column {
+        text-align: center;
+        padding: 0.4rem;
+        white-space: nowrap;
+    }
+}
+
+.input {
+    width: 4rem;
+    text-align: center;
+}
+
+.notification {
+    padding: 0.4rem;
+}
+
+.fa {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.box {
+    padding: 0;
+
+    @include mobile {
+        border-radius: 0;
+        &:not(.dash){
+            box-shadow: none;
+        }
+    }
+}
+
+.section {
+    padding: 1rem!important;
+}
+
+.is-bold {
+    font-weight: bold;
+}
+
+
+/*
+ *  Layout
+ */
+.App {
+    padding: 0 0.75rem;
+}
+
+.content {
+    @include touch {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-column {
+    background-color: $bg-color;
+    margin-top: -0.4em;
+    z-index: 2;
+    border-radius: 5px;
+
+    @include mobile {
+        background-color: transparent;
+    }
+
+    @include touch {
+        order: -1;
+    }
+
+    @include desktop {
+        border:1px solid lightgray;
+    }
+}
+
+
+/*
+ *  Header
+ */
+.header {
+    padding: 0;
+    margin: 0;
+
+    @include desktop {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .logo {
+        flex: 2 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            margin-top: 0.3rem;
+            width: 100%;
+            max-width: 274px;
+            image-rendering: crisp-edges;
+        }
+    }
+}
+
+
+/*
+ * Dash
+ */
+.dash {
+    .title {
+        margin-bottom: 0.2rem;
+        font-weight: normal;
+    }
+}
+
+
+/*
+ * Components
+ */
+
+
+/*
+ * Timer
+ */
+.Timer {
+    .time {
+        margin: 1rem 0;
+        font-size: 5rem;
+        line-height: 1;
+        font-weight: bold;
+        font-family: 'Roboto Mono', monospace;
+
+        .input {
+            height: 5rem;
+            font-size: 4rem;
+            padding: 0;
+            width: 7rem;
+        }
+    }
+}
+
+
+/*
+ *  Blinds
+ */
+.BlindsList {
+    .table .columns {
+        .column:nth-child(2) {
+            flex: 2 1 auto;
+        }
+
+        &:not(:first-child) {
+            cursor: pointer;
+        }
+    }
+}
+
+/*
+ * Players
+ */
+.PlayerList {
+    .top-ups .fa {
+        color: gray;
+    }
+}
+
+/*
+ *  Prizes
+ */
+.PrizeList {
+    .table {
+        margin: 1rem 0;
+    }
+}
+
+
+/*
+ * Chips
+ */
+.ChipList {
+    .Chip {
+        .icon .fa {
+            cursor: default;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+/*
+ * Modal
+ */
+.modal {
+    .box {
+        padding: 3rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .blinds-level {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .blinds {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .duration {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*
+ *  Buttons
+ */
+.ListButtons {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/*
+ * Edit mode
+ */
