@@ -7,5 +7,7 @@ VueJS project with simplified 'vuex' implementation
 #### TODO
 
 * Fix sound in Safari
+* Make blind level selection obvious
 * Shareable session through url
+* Color picker for chip color
 * Sticky header and timer on mobile
