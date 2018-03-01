@@ -4,6 +4,10 @@ VueJS project with simplified 'vuex' implementation
 
 [Live demo](http://poker.rumobox.com) 
 
+#### In progress
+
+* Switch from Bulma to Quasar and make it as PWA
+
 #### TODO
 
 * Fix sound in Safari
