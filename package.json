@@ -8,11 +8,11 @@
     "dev": "webpack --hide-modules --watch",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "dependencies": {
-    "cool-checkboxes-for-bulma.io": "^1.1.0",
-    "vue": "^2.2.1"
-  },
   "devDependencies": {
+    "vue": "^2.2.1",
+    "bulma": "^0.6.2",
+    "style-loader": "^0.20.2",
+    "cool-checkboxes-for-bulma.io": "^1.1.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-latest": "^6.24.1",
